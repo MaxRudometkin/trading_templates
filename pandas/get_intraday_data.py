@@ -1,4 +1,5 @@
 
+from alpha_vantage.timeseries import TimeSeries
 
 def get_intraday_history(ticker, time_frame):
     """
@@ -7,7 +8,7 @@ def get_intraday_history(ticker, time_frame):
     https://www.alphavantage.co/documentation/
 
     :param ticker:  string. "AAPL", "AMZN" ...
-    :param time_frame: string. "1m","15m"
+    :param time_frame: string. "1min","15min"
     :return: pandas dataframe
     """
 
